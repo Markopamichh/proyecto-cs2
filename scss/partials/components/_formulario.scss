@@ -1,16 +1,18 @@
-
+@use "../utilities/variables";
 
 .contacto {
-            background: rgb(220, 174, 143);
+            background: variables.$p-main-color;
             padding: 40px;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            font-family: "Montserrat", sans-serif;
     }
     .contacto h2{
         font-size: 40px;
         margin-bottom: 25px;
         text-align: center;
         position: relative;
+        font-family: "Montserrat", sans-serif;
     }
     .contacto h3{
             font-size: 30px;
@@ -51,12 +53,12 @@ form{
             margin-bottom: 8px;
             font-weight: bold;
             color: black;
-            font-size: 1.1em;
+            font-size: 20px;
         }
         .style-form {
             width: 100%;
             padding: 15px;
-            border: 2px solid #e1e5e9;
+            border: 2px solid white;
             border-radius: 10px;
             font-size: 16px;
             transition: all 0.3s ease;

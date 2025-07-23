@@ -1,3 +1,6 @@
+@use "../utilities/variables";
+
+
 .list-container{
         width: 100%;
         margin-top: 10px;
@@ -5,6 +8,7 @@
         display:flex;
         flex-wrap:wrap;
         justify-content: center;
+        font-family: "Montserrat", sans-serif;
     .card{
             justify-content: center;
             align-content: center;
