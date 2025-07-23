@@ -43,32 +43,44 @@
             </div>
         </nav>
     </header>
-    <section id="descargar">
-        <h1 class="title1">¿Dónde puedo descargar CS:GO / CS2?</h1>
-        <p>Puedes descargar el juego gratis desde Steam en el siguiente enlace:</p>
-        <a class="descarga" href="https://store.steampowered.com/app/730/CounterStrike_2/" target="_blank">
-            Descargar en Steam
-        </a>
-    </section>
+    <div class="container">
+        <section id="descargar">
+            <h1 class="title1">¿Dónde puedo descargar CS:GO / CS2?</h1>
+            <p>Puedes descargar el juego gratis desde Steam en el siguiente enlace:</p>
+            <a class="descarga" href="https://store.steampowered.com/app/730/CounterStrike_2/" target="_blank">
+                Descargar en Steam
+            </a>
+        </section>
 
-    <section id="contacto" class="contacto">
-        <h2>¿Dónde Encontrarnos?</h2>
-        <p><strong>Email:</strong> contacto@csfans.com</p>
-        <p><strong>Instagram:</strong> @csgo_leyendas</p>
-        <p><strong>Discord:</strong> discord.gg/csgofans</p>
-
-        <h3>Para mas informacion dejanos tu gmail y un mensaje</h3>
-
-        <form>
-            Nombre:<br>
-            <input="text" name="nombre" class="style-form"><br>
-            Correo electrónico:<br>
-            <input type="email" name="email" class="style-form"><br>
-            Mensaje:<br>
-            <textarea name="mensaje" rows="4" cols="40" class="style-form"></textarea><br>
-            <input type="submit" value="Enviar" class="style-form">
-        </form>
-    </section>
+        <section id="contacto" class="contacto">
+            <h2>¿Dónde Encontrarnos?</h2>
+            
+            <div class="contact-info">
+                <p><strong>Email:</strong> contacto@csfans.com</p>
+                <p><strong>Instagram:</strong> @csgo_leyendas</p>
+                <p><strong>Discord:</strong> discord.gg/csgofans</p>
+            </div>
+            <h3>Para más información déjanos tu nombre, tu correo, un mensaje y nos cantactaremos con vos</h3>
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="style-form" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" class="style-form" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" class="style-form" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+                
+                <input type="submit" value="Enviar Mensaje" class="submit-btn">
+            </form>
+        </section>
+    </div>
     <footer>
         &copy; 2025 - Sitio creado por fans de CS:GO
     </footer>

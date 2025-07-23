@@ -1,0 +1,71 @@
+
+body{
+    background-color: rgb(176, 101, 76)
+    
+}
+
+.div-main{
+    padding: 30px 0 30px 0;
+    .main-sections{
+        color: black;
+        font-size: 25px;
+        
+        border-radius: 16px;
+        width: 100%;
+        background-color:rgb(220, 174, 143);
+        .p-main{
+            text-align: center;
+        }
+        .games{
+            font-size: 20px;
+        }
+    }
+}
+.p-main{
+        text-align: center;
+        color: black;
+        font-size: 25px;
+        border-radius: 16px;
+        width: 100%;
+        background-color:rgb(220, 174, 143);
+}
+
+.jugador img {
+    width: 100%;
+    border-radius: 8px;
+}
+.jugador h2 {
+    margin: 10px 0 5px;
+    color: #030303;
+}
+.jugador p {
+    font-size: 20px;
+    margin: 5px 0;
+    color: #BABABA;
+}
+
+.video-mp4{
+        width: 100%;
+    }
+
+
+
+.title1{
+        padding-bottom: 16px;
+        padding-top: 16px;
+        text-align: center;
+        justify-content: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-color:rgb(176, 101, 76 );
+        font-size: 1.8em;
+}
+
+
+h2{
+    padding-bottom: 16px;
+    padding-top: 16px;
+    text-align: center;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 12px;
+    }
