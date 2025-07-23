@@ -5,14 +5,14 @@
             padding: 40px;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            font-family: "Montserrat", sans-serif;
+            font-family: variables.$font-family;
     }
     .contacto h2{
         font-size: 40px;
         margin-bottom: 25px;
         text-align: center;
         position: relative;
-        font-family: "Montserrat", sans-serif;
+        font-family: variables.$font-family;
     }
     .contacto h3{
             font-size: 30px;
@@ -73,7 +73,6 @@ form{
             font-size: 1.1em;
             font-weight: bold;
             border-radius: 50px;
-            cursor: pointer;
             transition: all 0.3s ease;
             width: 100%;
             margin-top: 10px;

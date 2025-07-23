@@ -8,10 +8,10 @@
             text-decoration: none;
             color: black;
             font-size: large;
-            border: solid rgb(220, 174, 143) ;
+            border: solid variables.$p-main-color;
             border-radius: 12px;
             margin: 2px;
-            font-family: "Montserrat", sans-serif;;
+            font-family: variables.$font-family;
             &:hover{
                 color: aliceblue;
             }
@@ -19,7 +19,7 @@
         .navbar-brand{
             .img-nav{
                 width: 100px;
-                background-color:rgb(217, 158, 109) ;
+                background-color:variables.$nav-bar-color;
             }
         }
     }
