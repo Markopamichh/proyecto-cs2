@@ -3,79 +3,83 @@
 
 
 
-body{
+body {
     background-color: rgb(176, 101, 76)
-    
 }
 
-.div-main{
-    padding: 30px 0 30px 0;
-    .main-sections{
+.div-main {
+    .main-sections {
+        justify-content:center;
+        align-items: center;
+        width: 100%;
         color: black;
         font-size: 25px;
         border-radius: 16px;
-        width: 100%;
         background-color: variables.$p-main-color;
         font-family: variables.$font-family;
-        .games{
+
+        .games {
             font-size: variables.$font-size;
         }
     }
 }
-.p-main{
-        text-align: center;
-        color: black;
-        font-size: variables.$font-size;
-        border-radius: 16px;
-        width: 100%;
-        background-color: variables.$p-main-color;
-        font-family: variables.$font-family;
+
+.p-main {
+    text-align: center;
+    color: black;
+    font-size: variables.$font-size;
+    border-radius: 16px;
+    width: 100%;
+    background-color: variables.$p-main-color;
+    font-family: variables.$font-family;
 }
 
 .jugador img {
     width: 100%;
     border-radius: 8px;
 }
+
 .jugador h2 {
     margin: 10px 0 5px;
     color: #030303;
     font-family: variables.$font-family
 }
+
 .jugador p {
     font-size: variables.$font-size;
     margin: 5px 0;
     color: #BABABA;
 }
 
-.video-mp4{
-        width: 100%;
-    }
-
-
-
-.title1{
-        padding-bottom: 16px;
-        padding-top: 16px;
-        text-align: center;
-        justify-content: center;
-        font-family: variables.$font-family;
-        background-color: rgb(176, 101, 76 );
-        font-size: variables.$font-size;
+.video-mp4 {
+    width: 100%;
 }
 
 
-h2{
+
+.title1 {
+    padding-bottom: 16px;
+    padding-top: 16px;
+    text-align: center;
+    justify-content: center;
+    font-family: variables.$font-family;
+    background-color: rgb(176, 101, 76);
+    font-size: variables.$font-size;
+}
+
+
+h2 {
     padding-bottom: 16px;
     padding-top: 16px;
     text-align: center;
     justify-content: center;
     font-family: variables.$font-family;
     border-radius: 12px;
-    }
+}
 
 
 
-.video-size{
+.video-size {
     background: linear-gradient(45deg, #ff6b35, #f7931e);
     color: white;
     border: none;
@@ -86,8 +90,26 @@ h2{
     transition: all 0.3s ease;
     width: 100%;
     margin-top: 10px;
-    &:hover{
+
+    &:hover {
         transform: translateY(-2px);
-        box-shadow: 0 8px 25px ;
-            }
+        box-shadow: 0 8px 25px;
     }
+}
+
+.submit-btn{
+    display: inline-block;
+    background: linear-gradient(45deg, #ff6b35, #f7931e);
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+    &:hover{
+                transform: translateY(-2px);
+                box-shadow: 0 8px 25px ;
+            }
+}

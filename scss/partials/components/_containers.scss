@@ -1,6 +1,7 @@
 @use "../utilities/variables";
 @import "../utilities/mixins";
 // MAPAS
+
 .mapas-container{
     @include flex(center,center);
     margin-top: 30px;

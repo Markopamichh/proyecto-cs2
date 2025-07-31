@@ -2,14 +2,15 @@
 
 
 
+
 .list-container{
+        justify-content: center;
+        align-items: center;
         width: 100%;
         margin-top: 10px;
         gap: 30px;
         display:flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items:center;
         font-family: variables.$font-family;
     .card{
             text-align: center;
