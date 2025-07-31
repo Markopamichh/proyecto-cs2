@@ -7,14 +7,11 @@
         margin-top: 10px;
         gap: 30px;
         display:flex;
-        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
-        align-items: self-start;
+        align-items:center;
         font-family: variables.$font-family;
     .card{
-
-            justify-content: center;
-            align-content: center;
             text-align: center;
             border: 1px solid #444;
             border-radius: 12px;
