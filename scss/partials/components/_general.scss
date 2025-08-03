@@ -8,22 +8,27 @@ body {
 }
 
 .div-main {
+    width: 100%;
     .main-sections {
         justify-content:center;
         align-items: center;
         width: 100%;
         color: black;
-        font-size: 25px;
+        font-size: 20px;
         border-radius: 16px;
+        display:inline-block;
         background-color: variables.$p-main-color;
         font-family: variables.$font-family;
-
         .games {
             font-size: variables.$font-size;
+            font-size: 20px;
         }
     }
 }
-
+footer{
+    background-color: variables.$p-main-color;
+    
+}
 .p-main {
     text-align: center;
     color: black;
@@ -96,8 +101,9 @@ h2 {
         box-shadow: 0 8px 25px;
     }
 }
-
-.submit-btn{
+.linkcs2{
+    justify-content: center;
+    .submit-btn{
     display: inline-block;
     background: linear-gradient(45deg, #ff6b35, #f7931e);
     color: white;
@@ -112,4 +118,12 @@ h2 {
                 transform: translateY(-2px);
                 box-shadow: 0 8px 25px ;
             }
+    }
+    .pagecs2{
+    width: 100%;
+    align-content: center;
+    margin-top: 20px;
 }
+}
+
+

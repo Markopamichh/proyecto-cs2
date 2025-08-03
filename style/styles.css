@@ -10,6 +10,19 @@
     padding: 20px;
   }
 }
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cs-stats {
+    justify-content: center;
+  }
+}
 .bg-navbar-propio {
   background-color: #824e24;
 }
@@ -34,18 +47,27 @@ body {
   background-color: rgb(176, 101, 76);
 }
 
+.div-main {
+  width: 100%;
+}
 .div-main .main-sections {
   justify-content: center;
   align-items: center;
   width: 100%;
   color: black;
-  font-size: 25px;
+  font-size: 20px;
   border-radius: 16px;
+  display: inline-block;
   background-color: rgb(220, 174, 143);
   font-family: "Montserrat", sans-serif;
 }
 .div-main .main-sections .games {
   font-size: 25px;
+  font-size: 20px;
+}
+
+footer {
+  background-color: rgb(220, 174, 143);
 }
 
 .p-main {
@@ -115,7 +137,10 @@ h2 {
   box-shadow: 0 8px 25px;
 }
 
-.submit-btn {
+.linkcs2 {
+  justify-content: center;
+}
+.linkcs2 .submit-btn {
   display: inline-block;
   background: linear-gradient(45deg, #ff6b35, #f7931e);
   color: white;
@@ -127,9 +152,14 @@ h2 {
   transition: all 0.3s ease;
   box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
 }
-.submit-btn:hover {
+.linkcs2 .submit-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px;
+}
+.linkcs2 .pagecs2 {
+  width: 100%;
+  align-content: center;
+  margin-top: 20px;
 }
 
 .list-container {
@@ -182,16 +212,14 @@ h2 {
   border: 1px solid #444;
   border-radius: 12px;
   width: 300px;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2666666667);
   font-size: 25px;
+  background-color: rgb(220, 174, 143);
 }
-.mapas-container .mapa .mapa h2 {
-  font-family: "Montserrat", sans-serif;
-}
-.mapas-container .mapa .mapa-info {
-  width: 90%;
+.mapas-container .mapa .mapa-body {
+  width: 100%;
   gap: 20px;
   margin-bottom: 6px;
+  background-color: rgb(220, 174, 143);
 }
 
 .contenedor {
@@ -368,6 +396,127 @@ form .submit-btn:hover {
   font-size: 1.1em;
   transition: all 0.3s ease;
   box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+}
+
+footer {
+  background: linear-gradient(45deg, rgb(220, 174, 143), #512c01);
+  border-top: 2px solid #ff6b35;
+  padding: 30px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 50px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  align-items: center;
+}
+.footer-content .footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.footer-content .footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+.footer-content .footer-description {
+  color: black;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.footer-content .social-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+.footer-content .social-links .social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 107, 53, 0.1);
+  border: 1px solid rgba(255, 107, 53, 0.3);
+  border-radius: 8px;
+  color: #ff6b35;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.footer-content .social-links .social-link:hover {
+  background: rgb(220, 174, 143);
+  border-color: #ff6b35;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgb(220, 174, 143);
+}
+.footer-content .footer-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer-content .footer-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  position: relative;
+}
+.footer-content .footer-links a:hover {
+  color: rgb(220, 174, 143);
+}
+.footer-content .stat-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.footer-content .stat {
+  width: 6px;
+  height: 6px;
+  background: black;
+  border-radius: 50%;
+  animation: blink 2s infinite;
+}
+
+.footer-bottom {
+  justify-content: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  color: #888;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.footer-bottom .cs-stats {
+  justify-content: center;
+  color: black;
+  font-size: 15px;
+}
+.footer-bottom .copyright {
+  color: black;
+  font-size: 15px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
