@@ -1,8 +1,12 @@
 // Base
-
 @use "./partials/base/resets";
 @use "./partials/base/tipografia";
 
+
+// Utilities
+@use "./partials/utilities/mixins";
+@use "./partials/utilities/extend";
+@use "./partials/utilities/variables";
 
 // COMPONENTS
 @use "./partials/components/navbar";
@@ -12,7 +16,10 @@
 @use "./partials/components/containers";
 @use "./partials/components/formulario";
 @use "./partials/components/buttons";
-@use "./partials/components/footer"
+@use "./partials/components/footer";
+
+
+
 
 
 

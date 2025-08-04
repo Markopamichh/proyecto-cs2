@@ -1,5 +1,5 @@
 @use "../utilities/variables";
-@import "../utilities/mixins";
+@use "../utilities/mixins";
 
 footer {
     background: linear-gradient(45deg, variables.$p-main-color, #512c01);
